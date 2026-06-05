@@ -13,7 +13,7 @@ public:
                 }
 
                 //secondary diagonal
-                else if(i+j==n-1){
+                else if(i+j==n-1){ 
                     sum=sum+mat[i][j];
                 }
             }
