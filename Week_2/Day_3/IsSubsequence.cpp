@@ -1,0 +1,27 @@
+class Solution {
+public:
+    bool isSubsequence(string s, string t) {
+        int i=0;
+        int j=0;
+        int n=s.size();
+        int m=t.size();
+
+            while(j<m){
+                if(s[i]==t[j]){
+                    i++;
+                    j++;
+                }
+                else{
+                    j++;
+                }
+                
+            }
+        if(i==n){
+            return true;
+        }
+        if(j==m && i!=n){
+            return false;
+        }
+        return false;
+    }
+};
